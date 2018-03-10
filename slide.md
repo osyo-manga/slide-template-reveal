@@ -14,9 +14,9 @@
 ## 使い方
 - - -
 
-1. [テンプレートをダウンロード]()
-1. `slide.md` に markdown でスライドを書き込む
-1. browser-sync 等でローカル環境で動作確認する
+1. [テンプレート](https://github.com/osyo-manga/slide-template-reveal)を[ダウンロード](https://github.com/osyo-manga/slide-template-reveal/archive/gh-pages.zip)する
+1. ダウンロードしたファイルの `slide.md` に markdown でスライドを書く
+1. browser-sync などを使ってローカル環境で動作確認する
 1. （必要であれば）gh-pages で公開する
 
 ---
@@ -236,15 +236,21 @@ $ browser-sync start --server --files "**/*"
 ## github で公開
 - - -
 
+* gh-pages を利用してスライドを公開する事が出来る
+* https://{ユーザ名}.github.io/{リポジトリ名}/#/
+
 ```
 $ git init
 # gh-pages ブランチで開発する
 $ git checkout -b gh-pages
 $ git add .
 $ git commit -m "first commit"
+# github のリモートを追加
+# git remote add origin git@github.com:{ユーザ名}/{リポジトリ名}.git
+$ git push -u origin gh-pages
 ```
 
----
+修正した場合は再度 commit して push する
 
 ---
 
@@ -252,9 +258,9 @@ $ git commit -m "first commit"
 - - -
 
 * `/?print-pdf/#` にアクセスして、PDF で印刷を行う。
-* `http://localhost:3000/#`
+* `https://osyo-manga.github.io/slide-template-reveal/#/`
 * ↓
-* `http://localhost:3000/?print-pdf/#/`
+* `https://osyo-manga.github.io/slide-template-reveal/?print-pdf/#/`
 
 ---
 
