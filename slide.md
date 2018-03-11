@@ -38,6 +38,11 @@
 ## オリジナルとの差異
 - - -
 
+* 見出しの英字をそのまま表示する
+  * デフォルトでは全て大文字
+* markdown のコードに対して任意の行をハイライトする
+  * `<span class="code-presenting-annotation fragment current-only" data-code-focus="1"></span>`
+
 ---
 
 ## タイトルの変更
